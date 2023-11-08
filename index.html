@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Fear & Hunger</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/images/font-used-for-funger-1-logo-v0-dzg1bidzo7bb1.ico" type="image/x-icon">
+</head>
+<body class="body">
+    
+    <main class="main" id="main">
+
+        <!-- Menú de configuración del juego -->
+        <section class="menu__config" id="menu__config">
+            <h1 class="centrar">Bienvenido/a a Mini Fear & Hunger</h1>
+            <p class="centrar">Selecciona al protagonista:</p>
+            <div class="protagonistas">
+
+                <!-- Cahara -->
+                <div class="protagonistas__personaje">
+                    <img src="./assets/images/Cahara_portrait.webp" alt="Cahara">
+                    <p class="centrar">Cahara</p>
+                </div>
+
+                <!-- D'arce -->
+                <div class="protagonistas__personaje">
+                    <img src="./assets/images/D'arce_portrait.webp" alt="D'arce">
+                    <p class="centrar">D'arce</p>
+                </div>
+
+                <!-- Enki -->
+                <div class="protagonistas__personaje">
+                    <img src="./assets/images/Enki_portrait.webp" alt="Enki">
+                    <p class="centrar">Enki</p>
+                </div>
+
+                <!-- Ragnvaldr -->
+                <div class="protagonistas__personaje">
+                    <img src="./assets/images/Ragnvaldr_portrait.webp" alt="Ragnvaldr">
+                    <p class="centrar">Ragnvaldr</p>
+                </div>
+            </div>
+
+            <button class="boton btn__jugar" id="btn__jugar">Jugar</button>
+        </section>
+
+        <!-- Enemigo -->
+        <section class="enemigo__box desaparecer" id="enemigo__box">
+            <img src="./assets/images/enemigos/Maneba.webp" alt="enemigo" id="enemigo__img" class="enemigo__img">
+            <div class="info__enemigo" id="info__enemigo">
+                <p class="info__text centrar">Maneba</p>
+                <p class="puntos__vida centrar" id="estado__enemigo"><span id="puntos__vida__Enemigo">200</span>/200 pv</p>
+            </div>
+        </section>
+
+        <!-- Personaje jugador -->
+        <section class="personaje__box desaparecer" id="personaje__box"> 
+            <img src="./assets/images/Enki.webp" alt="Enki" id="jugador__img" class="jugador__img">
+            <div class="info__jugador" id="info__jugador">
+                <p class="info__text centrar">Enki</p>
+                <p class="puntos__vida centrar" id="estado__jugador"><span id="puntos__vida__Jugador">200</span>/200 pv</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Caja de texto -->
+    <footer class="caja__informacion desaparecer" id="caja__informacion">
+
+        <p class="caja__texto" id="caja__texto"></p>
+
+        <!-- Botones de acción -->
+        <div class="caja__botones" id="caja__botones">
+            <button class="boton" id="boton__ataque">Atacar</button>
+            <button class="boton" id="boton__magia">Magia</button>
+            <button class="boton" id="boton__defensa">Defensa</button>
+            <button class="boton desaparecer" id="boton__otraPartida">¿Otra partida?</button>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
